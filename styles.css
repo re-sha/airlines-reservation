@@ -1,0 +1,634 @@
+.carousel {
+    width:100%;
+    height:360px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .a {
+   margin-left: 75%;
+  }
+
+  .container-fluid {
+     display: inline;
+     color: rgb(113, 15, 84)
+  }
+  
+ .error {
+   color: red;
+   font-size: 14px;
+ }
+ @font-face{
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  src: url(fonts/myfont.ttf)
+}
+ h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('rere.png');
+  background-color: #640334;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 54px;
+  margin-right: 54px;
+}
+ .form-group {
+   margin-bottom: 20px;
+ }
+ 
+ /* Responsive styling for smaller screens */
+ @media screen and (max-width: 768px) {
+     
+ }
+ .site-footer
+{
+  background-color:#640334;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+  padding-top: auto;
+  text-decoration: none;
+}
+.site-footer hr
+{
+  border-top-color:#edeaea;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  text-decoration: none;
+}
+.site-footer a
+{
+  color:#ffffff;
+  text-decoration: none;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#ffffff;
+  text-decoration: none;
+  
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#ffffff;
+  text-decoration: none;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+footer {
+    background-color: #640334 ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Resetting */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+
+
+.wrapper form .option {
+    position: relative;
+  
+    cursor: pointer;
+    display: block;
+}
+
+.wrapper form .option input {
+    display: none;
+}
+
+.wrapper form .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border: 1px solid #666;
+    border-radius: 50%;
+}
+
+.wrapper form .option input:checked~.checkmark:after {
+    display: block;
+}
+
+.wrapper form .option .checkmark:after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out 0s;
+}
+
+.wrapper form .option:hover input[type="radio"]~.checkmark {
+    background-color: #f4f4f4;
+}
+
+.wrapper form .option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    color: #fff;
+    transition: 300ms ease-in-out 0s;
+}
+
+.wrapper form .option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1);
+    color: #fff;
+}
+
+.wrapper form a {
+    color: #333;
+}
+
+.wrapper form .form-control {
+    outline: none;
+    border: none;
+}
+
+.wrapper form .form-control:focus {
+    box-shadow: none;
+}
+
+.wrapper form input[type="text"]:focus::placeholder {
+    color: transparent
+}
+
+input[type="date"] {
+    cursor: pointer;
+}
+
+.wrapper form .label::after {
+    position: absolute;
+    /* background-color: #fff; */
+    top: 5px;
+    left: 0px;
+    font-size: 0.9rem;
+    margin: 0rem 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+    color: #999;
+    transition: all .2s ease-in-out;
+    transform: scale(0);
+}
+
+.wrapper form .label#from::after {
+    content: 'From';
+}
+
+.wrapper form .label#to::after {
+    content: 'To';
+}
+
+.wrapper form .label#depart::after {
+    content: 'Depart Date';
+}
+
+.wrapper form .label#return::after {
+    content: 'Return Date';
+}
+
+.wrapper form .label#psngr::after {
+    content: 'Traveller(s)';
+}
+
+.wrapper form input[type="text"]:focus~.label::after {
+    top: -15px;
+    left: 0px;
+    transform: scale(1);
+}
+
+.wrapper form input[type="date"]:focus~.label::after {
+    top: -15px;
+    left: 0px;
+    transform: scale(1);
+}
+
+/* Margin */
+.margin {
+    margin: 2rem 0rem;
+}
+
+/* Media Queries */
+@media(max-width: 575.5px) {
+    .wrapper {
+        margin: 10px;
+    }
+
+    .wrapper form {
+        padding: 20px;
+    }
+
+    .margin {
+        margin: .2rem 0rem;
+    }
+}
+
+.section {
+	position: relative;
+	height: 67vh;
+  box-shadow: 8 40px 80px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+
+  width: 100%;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking {
+	font-family: 'PT Sans', sans-serif;
+	background-image: url('img/card2_banner.jpeg');
+    background: no-repeat;
+	background-position: center;
+}
+
+.booking-form {
+  display: inline;
+	background-image: url('img/card2_banner.jpeg');
+  background-size: cover;
+	padding: 40px;
+	border-radius: 6px;
+}
+
+.booking-form .form-group {
+	position: relative;
+}
+
+.booking-form .form-control {
+	background-color: #fff;
+	height: 50px;
+	color: #191a1e;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	padding: 0px 25px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 10px;
+	bottom: 6px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	display: block;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.booking-form .form-checkbox input {
+	position: absolute !important;
+	margin-left: -9999px !important;
+	visibility: hidden !important;
+}
+
+.booking-form .form-checkbox label {
+	position: relative;
+	padding-top: 4px;
+	padding-left: 30px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.booking-form .form-checkbox label+label {
+	margin-left: 15px;
+}
+
+.booking-form .form-checkbox input+span {
+	position: absolute;
+	left: 2px;
+	top: 4px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.booking-form .form-checkbox input+span:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	border-radius: 50%;
+	background-color: #640334;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.booking-form .form-checkbox input:not(:checked)+span:after {
+	opacity: 0;
+}
+
+.booking-form .form-checkbox input:checked+span:after {
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+}
+
+.booking-form .form-btn {
+	margin-top: 27px;
+}
+
+.booking-form .submit-btn {
+	color: #fff;
+	background-color: #640334;
+	font-weight: 400;
+	height: 50px;
+	font-size: 14px;
+	border: none;
+	width: 100%;
+	border-radius: 40px;
+	text-transform: uppercase;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+	opacity: 0.9;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap to the next line */
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 10px); /* Adjust the width for each element */
+}
+
+/* Styling for the modal container */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Ensure the modal appears on top of other content */
+  overflow: auto;
+}
+
+/* Styling for the modal content */
+.popup-content {
+  position: relative;
+  background-color: #640334;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('img/unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1.0;
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Styling for the confirmation button */
+#confirmButton {
+  background-color: #640334; /* Blue color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Center the confirmation button */
+#confirmButton {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Add hover effect to the confirmation button */
+#confirmButton:hover {
+  background-color: #7e0f47; /* Darker blue on hover */
+}
+
+
+
