@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <style>
+   body {
+    background-color:#640334;
+   }
+  </style>
+  <body>    
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <img src="img/flight_icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#"> Qatar Airways</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Our Services</a></li>
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experience</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privilege Club</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success" type="button">Login/Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/carousel_1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/c3.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/c.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <br>
+        <br>
+      </div>
+      <div id="booking" class="section">
+        <div class="section-center">
+          <div class="container">
+            <div class="row">
+              <div class="booking-form">
+                <form>
+          
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">Flying from</span>
+                        <select id="flying-from" name="flying-from" required></select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">Flying to</span>
+                        <select id="flying-to" name="flying-to" required></select>
+                      </div>
+                    </div>
+                  </div>
+                </select>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Departure Date</span>
+                        <input class="form-control" type="date" id="departure-date" name="departure-date" required>
+                        <span id="departure-error" class="error-message"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Return Date</span>
+                        <input class="form-control" type="date" id="return-date" name="return-date" required>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <span class="form-label">Adults (18+)</span>
+                        <select class="form-control" id="adult-count" name="adult-count" required>
+                          <option>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <span class="form-label">Children (0-17)</span>
+                        <select class="form-control" id="child-count" name="child-count" required>
+                          <option>0</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Travel class</span>
+                        <select class="form-control" id="travel-class" name="travel-class" required>
+                          <option>Economy class</option>
+                          <option>Business class</option>
+                          <option>First class</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <span class="form-label">Name</span>
+                        <input class="form-control" type="text" placeholder="Enter your name " id="name" name="name">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Email address</span>
+                        <input class="form-control" type="email" placeholder="Enter your email address" id="email" name="email" required>
+                        <span id="email-error" class="error-message"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <span class="form-label">Mobile number</span>
+                        <input class="form-control" type="text" placeholder="Mobile number" id="mob-number" name="mob-number" required>
+                        <span id="mob-error" class="error-message"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-btn">
+                        <button type="button" class="submit-btn" id="bookFlightButton">Book Flight</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="validatn.js"></script>
+      <div class="popup" id="myModal">
+        <div class="bg-image"></div>
+        <div class="popup-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2><center>CONFIRMATION DETAILS</center></h2>
+          <br>
+          <p><strong>Departure Country:</strong> <span id="modal-flying-from"></span></p>
+          <p><strong>Destination Country:</strong> <span id="modal-flying-to"></span></p>
+          <p><strong>Departure Date:</strong> <span id="modal-departure-date"></span></p>
+          <p><strong>Return Date:</strong> <span id="modal-return-date"></span></p>
+          <p><strong>Number of Adults:</strong> <span id="modal-adult-count"></span></p>
+          <p><strong>Number of Children:</strong> <span id="modal-child-count"></span></p>
+          <p><strong>Class Type:</strong> <span id="modal-travel-class"></span></p>
+          <p><strong>Name:</strong> <span id="modal-name"></span></p>
+          <p><strong>Email:</strong> <span id="modal-email"></span></p>
+          <p><strong>Phone:</strong> <span id="modal-mob-number"></span></p>
+          <form>
+          <button id="confirmButton" type="submit">CONFIRM</button>
+         </form>
+        </div>
+      </div>
+      <script>
+        function displayModal() {
+        const modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+      
+        const departureCountry = document.getElementById('flying-from').value;
+        const destinationCountry = document.getElementById('flying-to').value;
+        const departureDate = document.getElementById('departure-date').value;
+        const returnDate = document.getElementById('return-date').value;
+        const adultCount = document.getElementById('adult-count').value;
+        const childCount = document.getElementById('child-count').value;
+        const travelClass = document.getElementById('travel-class').value;
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const mobNumber = document.getElementById('mob-number').value;
+      
+        document.getElementById('modal-flying-from').textContent = departureCountry;
+        document.getElementById('modal-flying-to').textContent = destinationCountry;
+        document.getElementById('modal-departure-date').textContent = departureDate;
+        document.getElementById('modal-return-date').textContent = returnDate;
+        document.getElementById('modal-adult-count').textContent = adultCount;
+        document.getElementById('modal-child-count').textContent = childCount;
+        document.getElementById('modal-travel-class').textContent = travelClass;
+        document.getElementById('modal-name').textContent = name;
+        document.getElementById('modal-email').textContent = email;
+        document.getElementById('modal-mob-number').textContent = mobNumber;
+      
+        const closeButton = document.querySelector('.close');
+        closeButton.addEventListener('click', () => {
+          modal.style.display = 'none';
+        });
+      
+        const confirmButton = document.getElementById('confirmButton');
+        confirmButton.addEventListener('click', () => {
+          modal.style.display = 'none';
+        });
+        }
+
+        const bookFlightButton = document.getElementById('bookFlightButton');
+        bookFlightButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          displayModal();
+        });
+        const submitButton = document.querySelector('#booking-form button[type="submit"]');
+        submitButton.addEventListener('click', (e) => {
+          e.preventDefault(); 
+          displayModal(); 
+        });
+      </script>    
+      <script src="home.js"></script>
+     
+      <!-- <div class="iframe-container">
+        <iframe align="right" src="https://ads.google.com/intl/en_in/start/overview-ha/?subid=in-en-ha-awa-sk-a-o00!o3~Cj0KCQjw06-oBhC6ARIsAGuzdw0CxD9qszY5XUvm-sGYA3Y47Fq70Y61g6Z_mdZ4ZmBSpah1q1Q_Dl0aAiMQEALw_wcB~138229807089~kwd-16138611~16869586070~592470408155&&&gclsrc=aw.ds"></iframe>
+      </div> -->
+
+   <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <br>
+          <h6 style="font-family: 'Poppins', sans-serif">Qatar Airways</h6>
+          <p class="text-justify"> <i>Travelling Redefined.</i></p>
+          <p>A multiple award-winning airline, Qatar Airways was announced as the ‘Airline of the Year’ at the 2022 World Airline Awards, managed by the international air transport rating organisation, Skytrax. </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <br>
+          <h6>Business Solutions</h6>
+          <ul class="footer-links">
+            <li><a href="#">Corporate travel</a></li>
+            <li><a href="#">Beyond Business</a></li>
+            <li><a href="#">Advertise with us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <br>
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+          
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Qatar Airways</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
